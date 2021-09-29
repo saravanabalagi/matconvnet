@@ -1,5 +1,17 @@
 # MatConvNet: CNNs for MATLAB
 
+Forked from [vlfeat/matconvnet](https://github.com/vlfeat/matconvnet).
+Updated vl_compilenn.m and successfully compiled with CUDA 11.1 and MATLAB R2021b. Dockerfile available [here](https://github.com/saravanabalagi/matlab-dockerfile).
+
+```sh
+git clone https://github.com/saravanabalagi/matconvnet.git
+cd matconvnet
+
+# in matlab shell
+addpath matlab
+vl_compilenn('enableGpu', true)
+```
+
 **MatConvNet** is a MATLAB toolbox implementing *Convolutional Neural
 Networks* (CNNs) for computer vision applications. It is simple,
 efficient, and can run and learn state-of-the-art CNNs. Several
